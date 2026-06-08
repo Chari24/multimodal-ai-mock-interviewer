@@ -47,7 +47,7 @@ export default function App() {
           <span>ANTIGRAVITY <span style={{ color: 'var(--primary)', fontWeight: 800 }}>TALENT</span></span>
         </div>
         
-        <div className="nav-links" style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
+        <div className="nav-links" style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
           <a 
             href="https://github.com/Chari24?tab=projects" 
             target="_blank" 
@@ -56,6 +56,15 @@ export default function App() {
             style={{ padding: '0.4rem 0.8rem', fontSize: '0.75rem', borderRadius: '8px', display: 'flex', alignItems: 'center', gap: '0.35rem', margin: 0 }}
           >
             <span>📁 GitHub Projects</span>
+          </a>
+          <a 
+            href="https://github.com/users/Chari24/projects/4/views/6?system_template=iterative_development" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="btn btn-primary"
+            style={{ padding: '0.4rem 0.8rem', fontSize: '0.75rem', borderRadius: '8px', display: 'flex', alignItems: 'center', gap: '0.35rem', margin: 0, boxShadow: 'none' }}
+          >
+            <span>📊 Dev Board</span>
           </a>
           <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', fontWeight: 500 }}>
             Mock Session Simulator v1.0.0
@@ -92,9 +101,22 @@ export default function App() {
       {/* Footer */}
       <footer style={{ borderTop: '1px solid var(--border-color)', padding: '1.5rem', textAlign: 'center', fontSize: '0.85rem', color: 'var(--text-secondary)', background: 'rgba(10, 11, 16, 0.4)', display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'center', justifyContent: 'center' }}>
         <div>
-          © {new Date().getFullYear()} Gravity Talent. Powered by Multimodal Web Speech & OpenAI API Pipeline.
+          © {new Date().getFullYear()} Antigravity Talent. Powered by Multimodal Web Speech & OpenAI API Pipeline.
         </div>
-        
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.8rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+          <span>Explore my work:</span>
+          <a href="https://github.com/Chari24?tab=projects" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>
+            GitHub Projects
+          </a>
+          <span>•</span>
+          <a href="https://github.com/users/Chari24/projects/1" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--secondary)', fontWeight: 600, textDecoration: 'underline' }}>
+            Smart Shopping Cart
+          </a>
+          <span>•</span>
+          <a href="https://github.com/users/Chari24/projects/4/views/6?system_template=iterative_development" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)', fontWeight: 600, textDecoration: 'underline' }}>
+            Iterative Development Board
+          </a>
+        </div>
       </footer>
     </div>
   );
